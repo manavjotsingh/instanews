@@ -1,4 +1,9 @@
 body {
     background-color: black;
-    color: greenyellow;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 };
