@@ -1,0 +1,43 @@
+.screen-reader {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+body {
+  background-color: black;
+  color: white; }
+
+header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: center; }
+
+ul {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr); }
+  ul li {
+    grid-column: span 12;
+    padding-top: 100%; }
+  @media (min-width: 600px) {
+    ul li {
+      grid-column: span 6;
+      padding-top: 100%; } }
+  @media (min-width: 900px) {
+    ul li {
+      grid-column: span 3;
+      padding-top: 100%; } }
+  @media (min-width: 1200px) {
+    ul li {
+      grid-column: span 3;
+      padding-top: 100%; } }

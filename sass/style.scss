@@ -4,3 +4,27 @@
 @import 'mixins';
 @import 'fonts';
 @import 'main';
+
+
+
+header {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+ul {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(12, 1fr);
+    li {
+        grid-column: span 12;
+        padding-top: 100%;
+    }
+
+    @include for-tablet-portrait-up;
+    @include for-tablet-landscape-up;
+    @include for-desktop-up;
+}

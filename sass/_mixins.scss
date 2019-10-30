@@ -1,0 +1,20 @@
+@mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { 
+        li {
+            grid-column: span 6;
+            padding-top: 100%;
+        }
+     }
+  }@mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { li {
+        grid-column: span 3;
+        padding-top: 100%;
+    } }
+  }@mixin for-desktop-up {
+    @media (min-width: 1200px) { li {
+        grid-column: span 3;
+        padding-top: 100%;
+    } }
+  }@mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
