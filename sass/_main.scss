@@ -8,6 +8,48 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: $baseBackgroundColor;
+    color: $baseTextColor;
 };
+
+.main-container {
+	margin: 0 1rem;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding-bottom: 1rem;
+ }
+ 
+ ul {
+	 display: grid;
+	 grid-gap: .5rem;
+	 grid-template-columns: repeat(12, 1fr);
+ 
+	 li {
+		 grid-column: span 12;
+		 position: relative;
+		 padding-top: 100%;
+		 background-position: center; /* Center the image */
+		 background-repeat: no-repeat; /* Do not repeat the image */
+		 background-size: cover; /* Resize the background image to cover the entire container */
+		 
+		 @include media(600px) {
+			grid-column: span 6;
+		  }
+		 @include media(1000px) {
+			grid-column: span 3;
+		  }
+		
+		}
+
+	 p{
+		 position: absolute;
+		 bottom: 0;
+	 }
+ 
+ }
